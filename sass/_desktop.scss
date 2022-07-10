@@ -1,0 +1,346 @@
+@media screen and (min-width:769px) {
+    header {
+        width: 100%;
+        height: auto;
+      
+        .inicio {
+          width: auto;
+      
+          a img {
+            @include tamaño (140px, auto)
+
+          }
+        }
+      }
+      
+      .barra {
+        @include tamaño (100%, auto);
+        align-items: center;
+      
+        nav ul {
+          @include tamaño (100%, auto);
+          padding: 0;
+          margin-top: 15px;
+          margin-bottom: 15px;
+          margin-left: 0;
+          flex-wrap: wrap;
+        }
+      
+        ul li a {
+          padding: 18px;
+          padding-bottom: 0;
+      
+          &:hover {
+            color: $color-bg;
+            font-size: 27px;
+          }
+        }
+      }
+      
+      .search {
+        border-bottom: 1px solid $color-bg;
+        box-shadow: 0 1px 0 0 $color-bg;
+        width: 100%;
+        height: 30px;
+        justify-items: center;
+        text-align: center;
+        margin: 0px;
+        margin-bottom: -10px;
+        margin-top: -10px;
+      }
+      
+      .busqueda {
+        border-bottom: 1px solid $color-bg;
+        box-shadow: 0 1px 0 0 $color-bg;
+        color: $color;
+      }
+      
+      .menu {
+        flex-direction: row;
+        justify-content: flex-end;
+      
+        img {
+          @include tamaño (50px, auto);
+          margin-right: 5px;
+        }
+      
+        a img {
+          margin-left: 20px;
+        }
+      }
+      
+      /*section index*/
+      .fotos img {
+        height: 375px;
+      }
+      
+      .caracteristicas {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+        margin-bottom: 30px;
+        margin-left: 5px;
+        margin-right: 5px;
+      
+        div {
+          @include tamaño (300px, 300px);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      
+        h5 {
+          font-size: 25px;
+          text-align: center;
+        }
+      
+        p {
+          font-size: 18px;
+          text-align: center;
+        }
+      
+        img {
+          @include tamaño (175px, 175px);
+          margin-bottom: 5px;
+        }}
+
+      .caracteristicas{
+        color: $color;
+      }  
+      .small{
+        display: none;
+      }
+      
+      .medium{
+        display: none;
+      }
+
+
+      .ofertas {
+        color: $color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+      
+        h4 {
+          font-size: 30px;
+          margin-bottom: 15px;
+        }
+      
+        p {
+          font-size: 20px;
+          a{
+            text-decoration: none;
+            color:$color-bg
+          }
+          }
+        }
+
+      /*fin section*/
+      /*user.html*/
+      
+      .logeo {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 50px;
+        margin-right: 50px;
+        font-size: 25px;
+      }
+      
+      /*fin user.html*/
+      /*Demas htmls*/
+
+      .tarjet{
+        width: 250px;
+        border: linear-gradient(to right, rgb(24, 33, 69), rgb(227, 91, 52)) 2px solid;
+      }
+      div .tit{
+        width: 250px;
+      }
+      .tit{
+        font-size: 18px;
+        font-weight: 900;
+        color: $color;
+        text-align: center;
+        display: inline-block;
+      }
+
+      .desc{
+        font-size: 15px;
+        text-align: center;
+        display: inline-block;
+      }
+
+      .fotogra{
+        display: flex;
+        justify-content: center;
+      }
+      .ftLink{
+        width: 200px;
+        height: 200px;
+        justify-content:center;
+        -webkit-border-radius: 10px;
+      }
+
+      .descripcion{
+        display: flex;
+        margin-top: 5px;
+        flex-direction: column; 
+        align-items: center;
+      }
+      .prec{
+        font-size: 16px;
+        color: $color;
+        font-weight: 900; 
+        justify-content: center;
+        margin-top: 4px;
+      }
+
+      .si{
+        font-size: 13px;
+        font-weight: 900;
+        color: $color-bg;
+        cursor: pointer;
+        border: $color 2px solid;
+        -webkit-border-radius: 10px;
+        width: 200px;
+       
+
+      &:hover {
+        opacity: 1;
+        transition: all .3s ease-in-out;
+        border: 1px solid;
+        color: $color-fondo;
+        background-color: $color;
+      }}
+      
+      .todo {
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: 180px auto 16.393%;
+        grid-template-rows: 50px 30px auto;
+        gap: 5px 5px;
+        grid-template-areas: 
+        ". titulo ." 
+        ". . filtro" 
+        "marca catalogo .";
+      }
+      
+      .filtro {
+        @include tamaño (100%, 25px);
+      }
+      
+      .ordenar {
+        grid-area: marca;
+      }
+      
+      .marca, .marca2 {
+        @include tamaño (120px, 140px);
+      }
+      
+      .marca ul {
+        margin-left: -25px;
+      }
+      
+      .marca2 {
+        ul {
+          margin-left: -25px;
+          margin-left: -25px;
+        }
+      
+        height: 30px;
+        width: 120px;
+      }
+      
+      .catalogo img {
+        @include tamaño (200px, 200px);
+      }
+      
+      /*Fin de los demas html*/
+      /*Footer*/
+      
+      footer {
+        margin-top: 30px;
+        padding: 0;
+      }
+      
+      .tabla {
+        h5 {
+          font-size: 20px;
+        }
+      
+        ul li a {
+          color: $color-fondo;
+          font-size: 15px;
+        }
+      }
+      
+      /*Fin footer*/
+      /*Carrito.html*/
+      
+      .carrito {
+        margin-bottom: -8px;
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-rows: 50px auto;
+        grid-template-areas: " titulo titulo" "compras pedido";
+        margin-bottom: -40px;
+      }
+      
+      .compras {
+        display: flex;
+        flex-direction: column;
+        color: $color;
+        font-size: 20px;
+        vertical-align: text-top;
+      
+        img {
+          @include tamaño (100px, 100px);
+          -webkit-border-radius: 10px;
+          -o-border-image: space;
+          border-image: space;
+          color: $color;
+          margin: 10px;
+        }
+      }
+      
+      .articulos {
+        margin: 15px;
+        float: left;
+        vertical-align: middle;
+        border: $color-bg 5px solid;
+        border-radius: 20px;
+        width: 100%;
+      
+        b {
+          margin-left: 250px;
+        }
+      }
+      
+      .pedido {
+        text-align: center;
+        margin-top: 30%;
+        margin-left: 40%;
+      
+        div {
+          @include tamaño (210px, 140px);
+          border: $color-bg 5px solid;
+          border-radius: 20px;
+          color: $color;
+          font-size: 20px;
+        }
+      
+        input {
+          text-align: center;
+          color: $color-bg;
+          background-color: $color;
+          border-radius: 10px;
+          border: $color 2px solid;
+          width: 150px;
+        }
+      }
+      
+      /*Fin pedido.html*/
+    }

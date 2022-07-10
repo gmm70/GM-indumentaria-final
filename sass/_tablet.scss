@@ -1,0 +1,351 @@
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  header {
+    width: 100%;
+    height: auto;
+
+    .inicio {
+      width: auto;
+
+      a img {
+        width: 90px;
+        height: 90px;
+      }
+    }
+  }
+
+  .barra {
+    width: 100%;
+    align-items: center;
+    height: auto;
+
+    nav ul {
+      width: 100%;
+      height: auto;
+      padding: 0;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      margin-left: 0;
+      font-size: 15px;
+      flex-wrap: wrap;
+
+      li a {
+        width: 100%;
+        height: auto;
+        padding: 4px;
+        font-size: 20px;
+
+        &:hover {
+          color: $color-bg;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  .search {
+    border-bottom: 1px solid $color-bg;
+    box-shadow: 0 1px 0 0 $color-bg;
+    width: 100%;
+    height: 25px;
+    justify-items: center;
+    text-align: center;
+    margin-bottom: -10px;
+    font-size: 15px;
+    padding: 0;
+  }
+
+  .busqueda {
+    border-bottom: 1px solid $color-bg;
+    box-shadow: 0 1px 0 0 $color-bg;
+    color: $color;
+  }
+
+  .menu {
+    flex-direction: row;
+    width: auto;
+    align-items: center;
+    margin-right: 5px;
+    justify-content: flex-end;
+
+    img {
+      margin-left: 5px;
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  /*Fin encabezado*/
+
+  /*footer*/
+  .tabla ul li a{
+        color: $color-fondo;}
+  /*Fin footer*/
+
+  /*Section Index*/
+
+  .fotos img {
+    height: 350px;
+    margin-bottom: 35px;
+  }
+  
+  .caracteristicas {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+  
+    div {
+      width: 250px;
+      height: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    h5 {
+      font-size: 18px;
+      text-align: center;
+    }
+  
+    p {
+      font-size: 13px;
+      text-align: center;
+    }
+  
+    img {
+      height: 125px;
+      width: 125px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .caracteristicas{
+    color: $color;
+  }  
+
+  .small{
+    display: none;
+  }
+
+  .large{
+    display: none;
+  }
+
+  .ofertas {
+    color: $color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    flex-wrap: nowrap;
+  
+    h4 {
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+  
+    p {
+      font-size: 15px;
+      text-align: center;
+      a{
+        text-decoration: none;
+        color: $color-bg;
+      }
+  }
+  }
+
+  /*Fin section index*/
+
+  /*User.html*/
+
+  .logeo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 17px;
+  }
+
+  .enviar {
+    font-size: 15px;
+  }
+
+  /*Fin user*/
+
+  /*Demas htmls*/
+  .tarjet{
+    width: 225px;
+    border: linear-gradient(to right, rgb(24, 33, 69), rgb(227, 91, 52)) 2px solid;
+  }
+  div .tit{
+    width: 225px;
+  }
+  .tit{
+    font-size: 17px;
+    font-weight: 900;
+    color: $color;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .desc{
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .fotogra{
+    display: flex;
+    justify-content: center;
+  }
+  .ftLink{
+    width: 175px;
+    height: 175px;
+    justify-content:center;
+    -webkit-border-radius: 10px;
+  }
+
+  .descripcion{
+    display: flex;
+    margin-top: 5px;
+    flex-direction: column; 
+    align-items: center;
+  }
+  .prec{
+    font-size: 15px;
+    color: $color;
+    font-weight: 900; 
+    justify-content: center;
+    margin-top: 4px;
+  }
+
+  .si{
+    font-size: 12px;
+    font-weight: 900;
+    color: $color-bg;
+    cursor: pointer;
+    border: $color 2px solid;
+    -webkit-border-radius: 10px;
+    width: 200px;
+   
+
+  &:hover {
+    opacity: 1;
+    transition: all .3s ease-in-out;
+    border: 1px solid;
+    color: $color-fondo;
+    background-color: $color;
+  }}
+
+  .todo {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 50px 30px auto;
+    gap: 5px 5px;
+    grid-template-areas: "titulo titulo titulo" "marca . filtro"  "marca catalogo catalogo";
+  }
+
+  .filtro {
+    height: 25px;
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .ordenar {
+    grid-area: marca;
+  }
+
+  .marca, .marca2 {
+    height: 140px;
+    width: 80px;
+  }
+
+  .marca ul, .marca2 ul {
+    margin-left: -30px;
+  }
+
+  .lista {
+    font-size: 15px;
+  }
+
+  .catalogo img {
+    width: 175px;
+    height: 175px;
+  }
+
+  /*Fin htmls*/
+
+  /*Carrito*/
+
+  .carrito {
+    margin-bottom: -8px;
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-rows: 50px auto;
+    grid-template-areas: " titulo titulo" "compras pedido";
+    margin-bottom: -40px;
+  }
+
+  .compras {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    color: $color;
+    font-size: 17px;
+    height: auto;
+
+    img {
+      width: 100px;
+      height: 100px;
+      -webkit-border-radius: 10px;
+      -o-border-image: space;
+      border-image: space;
+      color: $color;
+      margin: 5px;
+    }
+  }
+
+  .articulos {
+    display: flex;
+    margin: 5px;
+    border: $color-bg 2px solid;
+    border-radius: 20px;
+    width: 100%;
+    height: 115px;
+
+    b {
+      margin-left: 10px;
+      margin-right: 5px;
+    }
+  }
+
+  .pedido {
+    margin: 20px;
+    text-align: center;
+    margin-top: 50%;
+    margin-left: 26%;
+
+    div {
+      border: $color-bg 2px solid;
+      border-radius: 20px;
+      color: $color;
+      font-size: 17px;
+      height: 120px;
+      width: 150px;
+    }
+
+    input {
+      text-align: center;
+      color: $color-bg;
+      background-color: $color;
+      border-radius: 10px;
+      border: $color 2px solid;
+      width: 100px;
+    }
+  }
+
+  /*Fin carrito*/
+}

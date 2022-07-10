@@ -1,0 +1,58 @@
+header {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    position: sticky;
+    top: 0%;
+    background-color: $color-fondo;
+    border-bottom: 5px solid $color-bg;
+    align-items: center;
+    justify-items: stretch;
+    z-index: 40;
+    grid-template-areas: "inicio barra main";
+    }
+.inicio {
+    grid-area: inicio;
+    display: flex;
+    justify-content: flex-start;
+    
+    a img {
+    width: 17.65;
+    object-fit: contain;
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) alternate;
+    }}
+
+.barra { 
+    grid-area: barra;      
+    ul{ 
+        display: flex;
+        list-style: none;
+        text-align: right;
+        justify-content: center;
+        font-size: 25px;
+
+        li{ 
+            animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) alternate;
+             
+            a{ 
+                text-decoration: none;
+                color: $color;    }} }
+            }
+            
+.menu {
+    grid-area: main;
+    display: flex;
+    
+    a img {
+        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) alternate;}}
+                
+
+@keyframes scale-up-center {
+    0% {
+    transform: scale(0.5);
+    }
+    100% {
+    transform: scale(1);
+    }
+}
